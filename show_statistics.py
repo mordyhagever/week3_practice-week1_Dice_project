@@ -19,11 +19,11 @@ def show_statistics():
         else:
             sum_player_wins += 1
 
-    player_winning_percentage = sum_player_wins / sum_games
+    player_winning_percentage = round((sum_player_wins / sum_games) * 100, 2)
     statistics["all_games"] = sum_games
     statistics["player_wins"] = sum_player_wins
     statistics["computer_wins"] = sum_computer_wins
     statistics["tie_games"] = sum_ties
-    statistics["players_winning_percentage"] = player_winning_percentage
+    statistics["players_winning_percentage"] = f"{player_winning_percentage}%"
     return statistics
 
