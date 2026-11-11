@@ -1,21 +1,28 @@
 import json
+from json import JSONDecoder
+
 
 def get_json():
-    with open("game_history.json", "r") as file:
-        loads = json.load(file)
-    return loads
+    try:
+        with open("game_history.json", "r") as file:
+            loads = json.load(file)
+        return loads
+    except json.JSONDecoder:
+        raise IOError("Json is broken")
+
 
 def add_to_json(dictionary):
-    loads = get_json()
-    loads.append(dictionary)
-    with open("game_history.json", "w") as file:
-        json.dump(loads, file, indent=2)
-    return "Added successfully"
+    try:
+        loads = get_json()
+        loads.append(dictionary)
+        with open("game_history.json", "w") as file:
+            json.dump(loads, file, indent=2)
+        return "Added successfully"
+    except json.JSONDecoder:
+        raise IOError("Json is broken")
 
-def update_full_json(list_of_dict):
-    with open("game_history.json", "w") as file:
-        json.dump(list_of_dict, file, indent=2)
-    return "json has been updated"
+
+
 
 def beginning_dict(name, rounds):
     game_dict = {}
