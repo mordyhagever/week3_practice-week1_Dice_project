@@ -2,8 +2,9 @@
   {
     "Player_name": "Mordy",
     "rounds": 3,
-    "player_score": 11,
-    "computer_score": 12,
+    "player_score": 7,
+    "computer_score": 11,
+    "winner": "Computer",
     "result": [
       {
         "round": 1,
@@ -13,15 +14,36 @@
       },
       {
         "round": 2,
-        "player_dice": 4,
+        "player_dice": 1,
         "computer_dice": 2,
-        "winner": "Mordy"
+        "winner": "Computer"
       },
       {
         "round": 3,
-        "player_dice": 5,
-        "computer_dice": 6,
+        "player_dice": 4,
+        "computer_dice": 5,
         "winner": "Computer"
+      }
+    ]
+  },
+  {
+    "Player_name": "Yakatz",
+    "rounds": 2,
+    "player_score": 9,
+    "computer_score": 8,
+    "winner": "Yakatz",
+    "result": [
+      {
+        "round": 1,
+        "player_dice": 4,
+        "computer_dice": 4,
+        "winner": "tie"
+      },
+      {
+        "round": 2,
+        "player_dice": 5,
+        "computer_dice": 4,
+        "winner": "Yakatz"
       }
     ]
   }

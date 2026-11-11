@@ -28,7 +28,6 @@ def beginning_dict(name, rounds):
 
 def make_a_dict(new_dict, result):
     new_dict["result"].append(result)
-    return new_dict
 
 
 

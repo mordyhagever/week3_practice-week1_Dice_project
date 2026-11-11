@@ -1,5 +1,4 @@
 from unittest import result
-result_dict = {}
 
 from validations import *
 from roll_dice import random_dicing
@@ -24,8 +23,16 @@ def add_turn(name):
    dice2 = random_dicing()
    print(f"{name}'s dice: {dice1}")
    print(f"computer dice: {dice2}")
+   if dice1 > dice2:
+       print(f"{name} wins this round\n")
+   elif dice2 > dice1:
+       print(f"Computer wins this round\n")
+   else:
+       print("Round finished with a tie\n")
    return dice1, dice2
 
+def play_round():
+    pass
 
 def game_manager():
     winner = None
@@ -34,7 +41,7 @@ def game_manager():
     computer_counter = 0
     rounds = get_rounds()
     game_dict = beginning_dict(name, rounds)
-    global result_dict
+    game_dict["winner"] = winner
     game_dict["result"] = []
     for i in range(rounds):
         result = {}
@@ -53,7 +60,7 @@ def game_manager():
         else:
             round_win = "tie"
         result["winner"] = round_win
-        result_dict = make_a_dict(game_dict, result)
+        make_a_dict(game_dict, result)
     if player_counter > computer_counter:
         winner = name
     elif computer_counter > player_counter:
@@ -61,16 +68,16 @@ def game_manager():
     else:
         winner = "tie"
 
-    result_dict["player_score"] = player_counter
-    result_dict["computer_score"] = computer_counter
+    game_dict["player_score"] = player_counter
+    game_dict["computer_score"] = computer_counter
+    game_dict["winner"] = winner
     print(f"""
     ====================
          GAME OVER
     ====================
     The winner is: {winner.upper()}!!!
 """)
-    add_to_json(result_dict)
-    return "Game had added successfully"
+    add_to_json(game_dict)
+    return "Game was added successfully"
 
 
-print(game_manager())
