@@ -25,7 +25,9 @@ Choose an option:
 def active1():
     print(game_manager())
 def active2():
-    print(show_history())
+    history = show_history()
+    for game in history:
+        print(f"Game result:\n{game}")
 def active3():
     print(show_statistics())
 

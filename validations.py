@@ -7,7 +7,7 @@ def check_name(name):
 
 def is_int(number):
     try:
-        number = int(number)
+        int(number)
         return True
     except ValueError:
         return False

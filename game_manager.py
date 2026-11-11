@@ -31,8 +31,6 @@ def add_turn(name):
        print("Round finished with a tie\n")
    return dice1, dice2
 
-def play_round():
-    pass
 
 def game_manager():
     winner = None
@@ -48,15 +46,15 @@ def game_manager():
         round_win = None
         print(f"-------Round {i + 1} --------")
         dices = add_turn(name)
-        player_counter += dices[0]
-        computer_counter += dices[1]
         result["round"] = i + 1
         result["player_dice"] = dices[0]
         result["computer_dice"] = dices[1]
         if dices[0] > dices[1]:
             round_win = name
+            player_counter += 1
         elif dices[1] > dices[0]:
             round_win = "Computer"
+            computer_counter += 1
         else:
             round_win = "tie"
         result["winner"] = round_win
@@ -71,12 +69,21 @@ def game_manager():
     game_dict["player_score"] = player_counter
     game_dict["computer_score"] = computer_counter
     game_dict["winner"] = winner
-    print(f"""
-    ====================
-         GAME OVER
-    ====================
-    The winner is: {winner.upper()}!!!
-""")
+    if winner != "tie":
+        print(f"""
+            ====================
+                 GAME OVER
+            ====================
+        The winner is: {winner.upper()}!!!
+    """)
+    else:
+        print(f"""
+            ====================
+                 GAME OVER
+            ====================
+        The game has finished with a tie!!!
+        """)
+
     add_to_json(game_dict)
     return "Game was added successfully"
 

@@ -1,82 +1,109 @@
 [
   {
     "Player_name": "Mordy",
-    "rounds": 3,
-    "player_score": 7,
-    "computer_score": 11,
-    "winner": "Computer",
+    "rounds": 2,
+    "player_score": 1,
+    "computer_score": 1,
+    "winner": "tie",
     "result": [
       {
         "round": 1,
-        "player_dice": 2,
+        "player_dice": 3,
         "computer_dice": 4,
         "winner": "Computer"
       },
       {
         "round": 2,
-        "player_dice": 1,
-        "computer_dice": 2,
-        "winner": "Computer"
+        "player_dice": 4,
+        "computer_dice": 1,
+        "winner": "Mordy"
+      }
+    ]
+  },
+  {
+    "Player_name": "Mow",
+    "rounds": 2,
+    "player_score": 1,
+    "computer_score": 1,
+    "winner": "tie",
+    "result": [
+      {
+        "round": 1,
+        "player_dice": 5,
+        "computer_dice": 1,
+        "winner": "Mow"
       },
       {
-        "round": 3,
-        "player_dice": 4,
-        "computer_dice": 5,
+        "round": 2,
+        "player_dice": 2,
+        "computer_dice": 3,
         "winner": "Computer"
       }
     ]
   },
   {
     "Player_name": "Yakatz",
-    "rounds": 2,
-    "player_score": 9,
-    "computer_score": 8,
-    "winner": "Yakatz",
-    "result": [
-      {
-        "round": 1,
-        "player_dice": 4,
-        "computer_dice": 4,
-        "winner": "tie"
-      },
-      {
-        "round": 2,
-        "player_dice": 5,
-        "computer_dice": 4,
-        "winner": "Yakatz"
-      }
-    ]
-  },
-  {
-    "Player_name": "Teacher",
     "rounds": 4,
-    "player_score": 10,
-    "computer_score": 12,
+    "player_score": 1,
+    "computer_score": 3,
     "winner": "Computer",
     "result": [
       {
         "round": 1,
-        "player_dice": 6,
-        "computer_dice": 3,
-        "winner": "Teacher"
+        "player_dice": 1,
+        "computer_dice": 4,
+        "winner": "Computer"
       },
       {
         "round": 2,
-        "player_dice": 1,
-        "computer_dice": 3,
+        "player_dice": 3,
+        "computer_dice": 5,
         "winner": "Computer"
       },
       {
         "round": 3,
         "player_dice": 2,
-        "computer_dice": 2,
-        "winner": "tie"
+        "computer_dice": 1,
+        "winner": "Yakatz"
       },
       {
         "round": 4,
-        "player_dice": 1,
-        "computer_dice": 4,
+        "player_dice": 3,
+        "computer_dice": 6,
         "winner": "Computer"
+      }
+    ]
+  },
+  {
+    "Player_name": "Basya",
+    "rounds": 4,
+    "player_score": 3,
+    "computer_score": 1,
+    "winner": "Basya",
+    "result": [
+      {
+        "round": 1,
+        "player_dice": 4,
+        "computer_dice": 6,
+        "winner": "Computer"
+      },
+      {
+        "round": 2,
+        "player_dice": 6,
+        "computer_dice": 4,
+        "winner": "Basya"
+      },
+      {
+        "round": 3,
+        "player_dice": 6,
+        "computer_dice": 3,
+        "winner": "Basya"
+      },
+      {
+        "round": 4,
+        "player_dice": 4,
+        "computer_dice": 2,
+        "winner": "Basya"
       }
     ]
   }
