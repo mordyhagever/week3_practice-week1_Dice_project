@@ -1,6 +1,7 @@
 from game_manager import game_manager
 from validations import choose_checker
 from show_history import show_history
+from show_statistics import show_statistics
 
 def print_menu():
     print(f"""
@@ -26,7 +27,7 @@ def active1():
 def active2():
     print(show_history())
 def active3():
-    pass
+    print(show_statistics())
 
 def main_menu():
     choice = print_menu()
