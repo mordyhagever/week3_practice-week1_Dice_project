@@ -25,9 +25,11 @@ Choose an option:
 def active1():
     print(game_manager())
 def active2():
+    counter = 0
     history = show_history()
     for game in history:
-        print(f"Game result:\n{game}")
+        counter += 1
+        print(f"Game-{counter} result:\n{game}")
 def active3():
     print(show_statistics())
 
