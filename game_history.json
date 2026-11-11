@@ -106,5 +106,20 @@
         "winner": "Basya"
       }
     ]
+  },
+  {
+    "Player_name": "Beown",
+    "rounds": 1,
+    "player_score": 1,
+    "computer_score": 0,
+    "winner": "Beown",
+    "result": [
+      {
+        "round": 1,
+        "player_dice": 2,
+        "computer_dice": 1,
+        "winner": "Beown"
+      }
+    ]
   }
 ]

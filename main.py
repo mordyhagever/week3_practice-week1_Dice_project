@@ -18,7 +18,7 @@ Choose an option:
 """)
     choose = input()
     while not choose_checker(choose):
-        choose = input("only a nuber from the menu")
+        choose = input("only a nuber from the menu: ")
     choose = int(choose)
     return choose
 
