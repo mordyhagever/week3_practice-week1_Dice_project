@@ -1,0 +1,28 @@
+[
+  {
+    "Player_name": "Mordy",
+    "rounds": 3,
+    "player_score": 11,
+    "computer_score": 12,
+    "result": [
+      {
+        "round": 1,
+        "player_dice": 2,
+        "computer_dice": 4,
+        "winner": "Computer"
+      },
+      {
+        "round": 2,
+        "player_dice": 4,
+        "computer_dice": 2,
+        "winner": "Mordy"
+      },
+      {
+        "round": 3,
+        "player_dice": 5,
+        "computer_dice": 6,
+        "winner": "Computer"
+      }
+    ]
+  }
+]
